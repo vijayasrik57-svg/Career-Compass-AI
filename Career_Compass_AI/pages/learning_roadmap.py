@@ -55,7 +55,13 @@ career = st.selectbox(
         "Cloud Engineer"
     ]
 )
-progress_file = "data/progress.json"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+progress_file = os.path.join(
+    BASE_DIR,
+    "data",
+    "progress.json"
+)
 
 if os.path.exists(progress_file):
     with open(progress_file, "r") as f:
