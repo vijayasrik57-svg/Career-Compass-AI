@@ -4,7 +4,11 @@ import pandas as pd
 import json
 import os
 
-careers = pd.read_csv("database/careers.csv")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+careers = pd.read_csv(
+    os.path.join(BASE_DIR, "database", "careers.csv")
+)
 jobs = pd.read_csv("database/jobs.csv")
 progress_file = "data/progress.json"
 completed = 0
