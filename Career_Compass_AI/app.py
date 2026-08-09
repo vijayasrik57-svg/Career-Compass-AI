@@ -241,7 +241,26 @@ with col2:
         use_container_width=True
     ):
         st.switch_page("pages/compare_careers.py")
+# -----------------------------
+# About Career Compass AI
+# -----------------------------
+st.markdown("""
+<div class="welcome">
 
+<h2>💡 About Career Compass AI</h2>
+
+<p>
+Career Compass AI is a smart career exploration platform designed
+to help students discover suitable careers, explore job opportunities,
+build learning roadmaps, find projects, and make better career decisions.
+</p>
+
+<p>
+🎯 Explore • 📚 Learn • 💼 Discover Jobs • 🚀 Build Your Future
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 # -----------------------------
 # Footer
 # -----------------------------
