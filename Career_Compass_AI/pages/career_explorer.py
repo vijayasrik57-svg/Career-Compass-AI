@@ -14,7 +14,11 @@ st.set_page_config(
 # -----------------------------
 # Read Career Database
 # -----------------------------
-df = pd.read_csv("database/careers.csv")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+df = pd.read_csv(
+    os.path.join(BASE_DIR, "database", "careers.csv")
+)
 
 # -----------------------------
 # CSS
