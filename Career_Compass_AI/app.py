@@ -169,7 +169,7 @@ st.divider()
 st.markdown("""
 <div class="welcome">
 
-<h2>👋 Welcome, Pattukutty!</h2>
+<h2>👋 Welcome, Career Explorer!</h2>
 
 <p>
 Your personalized career journey starts here.
